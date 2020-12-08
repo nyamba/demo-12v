@@ -1,4 +1,15 @@
+.container {
+  min-height: 500px;
+}
+
 header {
+  background-color: #f0f0f0;
   text-align: center;
-  background-color: #f3f3f3;
+  font-size: 25px;
+  padding: 30px;
+}
+
+footer {
+  text-align: center;
+  color: #555;
 }

@@ -1,10 +1,12 @@
-{% extends "layout.html" %}
-{% block title %}Hello page{% endblock %}
+{% extends "base.html"%}
+
+{% block title %}Flask Demo - 11A{% endblock%}
 {% block body %}
-	{% if user %}
-			<h1>Hello {{ user }}!</h1>
-	{% else %}
-			<h1>Hello, World!</h1>
-	{% endif %}
-	<h2>Age: {{age}}</h2>
+	<div>
+		{% if age > 18 %}
+			<h1>{{name}} бол том хүн</h1>
+		{% else %}
+			<h1>{{name}} бол хүүхэд</h1>
+		{% endif %}
+	</div>
 {% endblock %}
