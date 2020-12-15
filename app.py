@@ -4,7 +4,9 @@ from flask import render_template
 
 app = Flask(__name__)
 
-data = 'initial'
+@app.route('/')
+def home():
+    return render_template('home.html')
 
 # view function
 @app.route('/user/<name>/<int:age>')
@@ -17,6 +19,7 @@ def add(number1, number2):
     total = number1 + number2
     return render_template('total.html', total=total)
 
+
 @app.route('/n/<news_id>')
 def detail_page(news_id):
     return 'News id: '+ news_id
@@ -24,4 +27,4 @@ def detail_page(news_id):
 
 @app.route('/snake')
 def snake():
-    return data
+    return render_template('snake.html')

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block title %} nest.news {% endblock %}
+{% block body %}
+	<h1>Nest news</h1>
+	<ul>
+		<li><a href="{{ url_for('snake') }}">snake</li></li>
+		<li><a href="{{ url_for('index', name='bat', age=10) }}">Хэрэгчийн нэр нас</li></li>
+		<li><a href="{{ url_for('add', number1=10, number2=22) }}">Хоёр тоо нэмэх</li></li>
+		<li><a href="{{ url_for('detail_page', news_id=334 ) }}">Мэдээний дэлгэрэнгүй</li></li>
+	</ul>
+{% endblock %}
