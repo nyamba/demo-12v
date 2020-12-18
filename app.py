@@ -24,7 +24,8 @@ def add(number1, number2):
 
 @app.route('/n/<news_id>')
 def detail_page(news_id):
-    return 'News id: '+ news_id
+    return render_template("news.html", news_id = news_id)
+
 
 
 @app.route('/game/snake1')
