@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %} Sport.MN {% endblock %}
+
+{% block body %}
+	<a href="{{url_for('index', name='bat', age=14)}}">Хэрэглэгчийн мэдээлэл</a>
+	<br>
+    <a href="{{url_for('snake')}}">Snake game</a>
+    <br>
+	<a href="{{url_for('add', number1=10, number2=33)}}">Хоёр тооны нийлбэр</a>
+    <br>
+	<a href="{{url_for('detail_page', news_id=10)}}">Мэдээний дэлгэрэнгүй</a>
+
+{% endblock %}
